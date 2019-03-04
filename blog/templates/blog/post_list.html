@@ -3,15 +3,18 @@
         <title>Django - nauka</title>
     </head>
     <body>
-    <div>
+    <div class = "a">
             <h1><a href="/">Django Blog</a></h1>
     </div>
-    {% for blog in blogs %}
-        <div>
-            <p>published: {{ blog.published_date }}</p>
+
+        <div class="da">
+             {% for blog in blogs %}
+
             <h2><a href="">{{ blog.title }}</a></h2>
+            <p>published: {{ blog.published_date }}</p>
             <p>{{ blog.text}}</p>
+             {% endfor %}
         </div>
-    {% endfor %}
+
     </body>
 </html>

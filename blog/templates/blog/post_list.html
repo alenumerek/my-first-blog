@@ -1,11 +1,17 @@
-<head>
-
-    <title>Open Source ERP and CRM | Odoo</title>
-
-</head>
-
-<body>
-
-<h2>Blod Damiana</h2>
-
-</body>
+<html>
+    <head>
+        <title>Django - nauka</title>
+    </head>
+    <body>
+    <div>
+            <h1><a href="/">Django Blog</a></h1>
+    </div>
+    {% for blog in blogs %}
+        <div>
+            <p>published: {{ blog.published_date }}</p>
+            <h2><a href="">{{ blog.title }}</a></h2>
+            <p>{{ blog.text}}</p>
+        </div>
+    {% endfor %}
+    </body>
+</html>
